@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<main class="container">
+    <header class="header">
+        <h1>Shopping List</h1>
+        <label for="color-picker">Choose background color: </label><input type="color" id="color-picker">
+    </header>
+    <section class="form">
+        <form class="form-control">
+            <h3>There you can add items to your card</h3>
+            <label for="form-input">Item name</label>
+            <input required pattern="^[a-zA-Z0-9 ]+" maxlength="255" autofocus type="text" id="form-input" placeholder="I should buy..." />
+            <button class="form-control__button" type="submit">Add item</button>
+            <button class="form-control__button-shopList" type="button">Go to item list</button>
+        </form>
+    </section>
+    <section class="content">
+        <div class="content-list">
+            <button type="button" class="content-button__clear">Clear all</button>
+        </div>
+    </section>
+</main>
+<script type="module" src="../script.js"></script>
+</body>
+</html>
